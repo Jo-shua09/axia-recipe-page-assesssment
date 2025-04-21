@@ -1,0 +1,191 @@
+:root {
+  /* COLORS */
+  --white: hsl(0, 0%, 100%);
+  --Stone100: hsl(30, 54%, 90%);
+  --Stone150: hsl(30, 18%, 87%);
+  --Stone600: hsl(30, 10%, 34%);
+  --Stone900: hsl(24, 5%, 18%);
+  --Brown800: hsl(14, 45%, 36%);
+  --Rose800: hsl(332, 51%, 32%);
+  --Rose50: hsl(330, 100%, 98%);
+
+  /* FONT SIZE */
+  --Fontsize: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  color: var(--Stone900);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 4rem;
+  background-color: var(--Stone100);
+}
+.insideContainer {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.intro {
+  width: 100%;
+  height: 100%;
+  margin: 4rem 0;
+}
+.intro h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+.intro p {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: none;
+}
+.nutrition,
+.prep,
+.instructions,
+.ingredients {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--Stone100);
+  border-radius: 1rem;
+  padding: 3rem;
+}
+.nutrition h3,
+.instructions h3,
+.ingredients h3,
+.prep h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  width: 100%;
+  color: var(--Rose800);
+}
+.instructions ol,
+.ingredients ul,
+.prep ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  width: 100%;
+  margin-left: 3rem;
+}
+.instructions ol li,
+.ingredients ul li,
+.prep ul li {
+  width: 90%;
+  line-height: 2.2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--Stone900);
+}
+.instructions ol li span,
+.prep ul li span {
+  font-weight: bold;
+}
+.ingredients,
+.instructions {
+  width: 100%;
+  margin: 4rem 0;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+  padding-bottom: 3rem;
+  border-bottom: 0.2rem solid var(--Stone900);
+}
+.nutrition {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+}
+.nutrition p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: none;
+}
+.nutrition .details {
+  display: flex;
+  flex-direction: column;
+}
+.details .flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 0.1rem solid var(--Stone900);
+}
+.flex .itemName {
+  align-items: start;
+  display: flex;
+  width: 100%;
+  padding-left: 3rem;
+  color: var(--Stone900);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.flex .item {
+  align-items: start;
+  display: flex;
+  width: 100%;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--Rose800);
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55.5%;
+  }
+  .intro h1 {
+    font-size: 4rem;
+  }
+  .insideContainer {
+    width: 100%;
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .intro h1 {
+    font-size: 3rem;
+  }
+  .container {
+    padding: 2rem;
+  }
+  .insideContainer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+}
